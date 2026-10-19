@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "0wLwPOMuolH6oKt37WcSuna4QiyEYjyLPfT5EO1rLVo=",
+  "Source": "OnlineShoppingMVC",
+  "BasePath": "_content/OnlineShoppingMVC",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "OnlineShoppingMVC\\wwwroot",
+      "Source": "OnlineShoppingMVC",
+      "ContentRoot": "C:\\Users\\Pranav\\Downloads\\OnlineShoppingMVC\\wwwroot\\",
+      "BasePath": "_content/OnlineShoppingMVC",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Pranav\\Downloads\\OnlineShoppingMVC\\wwwroot\\.gitkeep",
+      "SourceId": "OnlineShoppingMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Pranav\\Downloads\\OnlineShoppingMVC\\wwwroot\\",
+      "BasePath": "_content/OnlineShoppingMVC",
+      "RelativePath": ".gitkeep",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\.gitkeep"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+@model Product
+
+<h2>Product Details</h2>
+
+<div class="card">
+    <div class="card-body">
+        <h4>@Model.ProductName</h4>
+
+        <p><b>Product ID:</b> @Model.ProductId</p>
+        <p><b>Category:</b> @Model.Category</p>
+        <p><b>Original Price:</b> ₹@Model.Price</p>
+        <p><b>Discount:</b> @Model.DiscountPercentage%</p>
+
+        <div class="alert alert-success">
+            <b>Discounted Price:</b>
+            ₹@Model.GetDiscountedPrice()
+        </div>
+
+        <!-- Hidden field demonstrates submitting the ProductId. -->
+        <form asp-controller="Shop"
+              asp-action="SelectProduct"
+              method="post"
+              class="card p-3">
+
+            <input type="hidden"
+                   name="productId"
+                   value="@Model.ProductId" />
+
+            <div class="mb-3">
+                <label class="form-label">Customer Name</label>
+                <input name="customerName"
+                       class="form-control"
+                       required />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Category</label>
+                <input name="category"
+                       value="@Model.Category"
+                       class="form-control"
+                       readonly />
+            </div>
+
+            <button type="submit" class="btn btn-success">
+                Select Product
+            </button>
+        </form>
+
+        <p class="text-muted mt-3">
+            This page uses MemoryCache for 10 minutes.
+        </p>
+
+        <a class="btn btn-secondary"
+           asp-controller="Shop" asp-action="Index">
+            Back to Products
+        </a>
+    </div>
+</div>
